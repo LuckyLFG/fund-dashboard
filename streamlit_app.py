@@ -90,7 +90,7 @@ date_range = st.sidebar.date_input(
 # 筛选数据
 if len(date_range) == 2:
     start_date, end_date = date_range
-    filtered_df = df[(df['日期'] >= pd.Timestamp(start_date)) &amp; 
+    filtered_df = df[(df['日期'] >= pd.Timestamp(start_date)) &amp; amp;
                      (df['日期'] <= pd.Timestamp(end_date))]
 else:
     filtered_df = df
